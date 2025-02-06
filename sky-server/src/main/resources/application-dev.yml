@@ -11,3 +11,10 @@ sky:
     access-key-id: LTAI5tFK3UAQ47fm3ppJJ1fU
     access-key-secret: a03YjSAQFdqD16QdUqboJVO8BrA84W
     bucket-name: changangqiongwaimai1
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+  wechat:
+    appid: wxcf152626eeb7c6f2
+    secret: 6feb134af833e9656ec352e20e796126
