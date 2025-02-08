@@ -85,4 +85,15 @@ public class ShoppingCartServiceimpl implements ShoppingCartService {
         ShoppingCart shoppingCart = ShoppingCart.builder().userId(currentId).build();
         return shoppingCartMapper.list(shoppingCart);
     }
+
+    /**
+     * 清空购物车
+     */
+    @Override
+    public void cleanShoppingCart() {
+        //获取当前用户的id
+        Long currentId = BaseContext.getCurrentId();
+        ShoppingCart shoppingCart = ShoppingCart.builder().userId(currentId).build();
+        shoppingCartMapper.deleteByUserId(shoppingCart.getUserId());
+    }
 }
