@@ -28,7 +28,6 @@ public class PayNotifyController {
     private OrderService orderService;
     @Autowired
     private WeChatProperties weChatProperties;
-
     /**
      * 支付成功回调
      *
